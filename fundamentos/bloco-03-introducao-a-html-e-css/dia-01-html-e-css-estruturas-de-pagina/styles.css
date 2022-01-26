@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.person {
+    padding: 0.75rem;
+
+    display: flex;
+    place-items: center;
+}
+
+ul li img {
+    margin-right: 0.5rem;
+}
