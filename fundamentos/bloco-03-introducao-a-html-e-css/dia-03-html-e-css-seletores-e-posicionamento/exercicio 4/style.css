@@ -1,0 +1,38 @@
+div:hover {
+    border: 1px solid rgb(161, 55, 231);
+}
+
+div {
+    width: 300px;
+}
+
+div:nth-of-type(1), div:nth-of-type(1) > h3 {
+    color: rgb(34,181,79);
+    background: rgb(255, 0, 0);
+}
+
+div:nth-of-type(2), div:nth-of-type(2) > h3 {
+    background: rgb(36,180,79);
+    color: rgb(251,82,2);
+}
+
+div:nth-of-type(3), div:nth-of-type(3) > h3 {
+    background: rgb(236,74,30);
+    color: rgb(26,141,123);
+    width: auto;
+    height: 100px;
+}
+
+div:nth-of-type(4), div:nth-of-type(4) > h3 {
+    background: #201318;
+    color: #fff;
+}
+
+div:nth-of-type(5), div:nth-of-type(5) > h3 {
+    background: #bef9fd;
+    color: #8C192A;
+}
+
+div:nth-of-type(odd) > h3 {
+    font-style: italic;
+}
