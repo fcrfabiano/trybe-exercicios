@@ -1,0 +1,45 @@
+h1 {
+    font-size: 65px;
+    color: rgb(245, 173, 39);
+    font-family: sans-serif;
+}
+
+li {
+    background: rgb(197, 75, 75);
+    width: 100px;
+}
+
+.novaCor {
+    background:rgb(187, 122, 1);
+}
+
+p {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+body {
+    font-size: 16px;
+}
+
+ul li:first-child {
+    font-style: oblique;
+    line-height: 1rem;
+    text-align: right;
+    text-decoration: line-through;
+    background: yellow;
+}
+
+li:nth-child(2) {
+    line-height: 3rem;
+    text-align: center;
+    background: red;
+}
+
+ul li:last-child {
+    font-style: italic;
+    line-height: 2rem;
+    text-align: left;
+    text-decoration: overline;
+    background: brown;
+}
