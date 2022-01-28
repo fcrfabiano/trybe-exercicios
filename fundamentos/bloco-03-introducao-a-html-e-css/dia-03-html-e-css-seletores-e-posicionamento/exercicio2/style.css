@@ -31,13 +31,3 @@
     left: 700px;
     top: 365px;
   }
-
-  .barra {
-    width: 100vw;
-    height: 10px;
-    background: rgb(102, 59, 59);
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 525px;
-  }
