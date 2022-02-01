@@ -1,0 +1,11 @@
+#aside {
+    position: absolute;
+    top: 500px;
+    right: 50px;
+}
+
+.aside-content {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
