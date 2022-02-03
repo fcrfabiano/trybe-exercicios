@@ -11,6 +11,8 @@ function nota(notaNumerica) {
         return "E";
     if (notaNumerica < 50)
         return "F";
+    if (notaNumerica < 0 || notaNumerica > 100)
+        return "Nota inválida";
 }
 
 
