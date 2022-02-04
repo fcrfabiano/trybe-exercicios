@@ -6,4 +6,4 @@ for (let number of numbers) {
     total += number;
 }
 
-console.log(total);
+console.log((total / numbers.length) > 20 ? "valor maior que 20" : "valor menor ou igual a 20");
