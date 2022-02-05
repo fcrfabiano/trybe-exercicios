@@ -9,4 +9,14 @@ function fatorial(num) {
         return num * fatorial(num-1);
 }
 
-console.log(fatorial(10));
+function fac(num) {
+    let result = 1;
+    
+    for (let i = 1; i <= num; i+=1) {
+        result *= i;
+    }
+
+    return result;
+}
+
+console.log(fac(10));
