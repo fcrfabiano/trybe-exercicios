@@ -11,11 +11,15 @@ console.log((ondeVoceEsta.nextSibling.textContent = "Texto mudou!"));
 console.log(ondeVoceEsta.nextElementSibling);
 console.log(pai.lastElementChild.lastElementChild);
 
-function createElement(element, parent, className) {
+function createElement(element, className) {
   const newElement = document.createElement(element);
   newElement.className = className;
-  parent.append(newElement);
+
+  return newElement;
 }
 
-createElement("section", pai, "irmaoOndeEstou");
-createElement("section", ondeVoceEsta, "filhoOndeVoceEsta");
+pai.appendChild(createElement("section", "irmaoOndeEstou"));
+ondeVoceEsta.appendChild(createElement("section", "filhoOndeVoceEsta"));
+primeiroFilho.parentElement.appendChild(
+  createElement("section", "irmaoPrimeiroFilhoDoFilho")
+);
