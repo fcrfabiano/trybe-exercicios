@@ -57,7 +57,22 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      function createElement(element, className) {
+          const newElement = document.createElement(element);
+          newElement.className = className;
+
+          return newElement;
+      }
+
+      function elementAppend(element, parent) {
+        const parentSelector = document.querySelector(parent);
+
+        return parentSelector.appendChild(element);
+      }
+
+      const element = createElement('h1', 'titulo');
+      element.innerText = "Exercício 5.2 - JavaScript DOM";
+      elementAppend(element, 'body');
     </script>
   </body>
 </html>
