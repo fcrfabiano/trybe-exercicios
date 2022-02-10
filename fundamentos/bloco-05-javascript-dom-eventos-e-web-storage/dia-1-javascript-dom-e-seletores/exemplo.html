@@ -1,0 +1,30 @@
+<!-- 
+Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
+Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
+Por fim, recupere o subtítulo e altere-o também. -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById("page-title").innerText = "Monk";
+      document.getElementById("paragraph").innerText = "Monk era um detetive brilhante de homicídios, trabalhava para o Departamento de Polícia de São Francisco, até que sua esposa Trudy morreu numa explosão de carro em 1997 ao ir comprar um remédio para Ambrose. Monk sofreu um colapso nervoso pelo fato de não ter encontrado quem matou Trudy, suas fobias (por germes, altura, multidão e até por leite) se agravaram e interferiram de modo que Leland teve que afastar Monk, que se isolou, recusando sair de sua casa por três anos. Com a ajuda da enfermeira prática Sharona Fleming (Bitty Schram), pôde finalmente sair da casa. Começou a executar o trabalho de consultor particular para a polícia em casos muito difíceis. ";
+      document.getElementById("subtitle").innerText = "Personagens";
+      document.getElementById("second-paragraph").innerText = `Adrian Monk (Tony Shalhoub) - Detetive policial aposentado; consultor criminal
+Natalie Jane Davenport Teeger (Traylor Howard) - Assistente de Adrian Monk
+Julie Teeger (Emmy Clarke) - Estudante, filha de Natalie Teeger
+Capitão Leland Stottlemeyer (Ted Levine) - Capitão policial do Departamento Policial de São Francisco (Roubos e Homicídios)
+Tenente Randy Disher (Jason Gray-Stanford) - Tenente policial do Departamento Policial de São Francisco (Roubos e Homicídios)
+Dr. Neven Bell (Hector Elizondo) - Psiquiatra de Adrian Monk
+Dr. Charles Kroger (Stanley Kamel) - Psiquiatra de Adrian Monk
+Sharona Fleming (Bitty Schram) - Enfermeira e assistente de Adrian Monk`;
+    </script>
+  </body>
+</html>
