@@ -20,6 +20,10 @@ function createElement(element, className) {
 
 pai.appendChild(createElement("section", "irmaoOndeEstou"));
 ondeVoceEsta.appendChild(createElement("section", "filhoOndeVoceEsta"));
-primeiroFilho.parentElement.appendChild(
+const irmaoPrimeiroFilhoDoFilho = primeiroFilho.parentElement.appendChild(
   createElement("section", "irmaoPrimeiroFilhoDoFilho")
+);
+console.log(
+  irmaoPrimeiroFilhoDoFilho.previousElementSibling.previousElementSibling
+    .previousElementSibling
 );
