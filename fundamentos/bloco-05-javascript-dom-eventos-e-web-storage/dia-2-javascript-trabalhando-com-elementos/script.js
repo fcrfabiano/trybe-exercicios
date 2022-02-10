@@ -14,7 +14,8 @@ console.log(pai.lastElementChild.lastElementChild);
 function createElement(element, parent, className) {
   const newElement = document.createElement(element);
   newElement.className = className;
-  parent.appendChild(newElement);
+  parent.append(newElement);
 }
 
 createElement("section", pai, "irmaoOndeEstou");
+createElement("section", ondeVoceEsta, "filhoOndeVoceEsta");
