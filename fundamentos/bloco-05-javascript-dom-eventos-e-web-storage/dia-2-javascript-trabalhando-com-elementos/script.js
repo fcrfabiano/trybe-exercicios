@@ -7,3 +7,4 @@ const pai = document.getElementById("pai");
 const primeiroFilho = pai.firstElementChild;
 
 console.log(ondeVoceEsta.previousElementSibling);
+console.log((ondeVoceEsta.nextSibling.textContent = "Texto mudou!"));
