@@ -10,3 +10,11 @@ console.log(ondeVoceEsta.previousElementSibling);
 console.log((ondeVoceEsta.nextSibling.textContent = "Texto mudou!"));
 console.log(ondeVoceEsta.nextElementSibling);
 console.log(pai.lastElementChild.lastElementChild);
+
+function createElement(element, parent, className) {
+  const newElement = document.createElement(element);
+  newElement.className = className;
+  parent.appendChild(newElement);
+}
+
+createElement("section", pai, "irmaoOndeEstou");
