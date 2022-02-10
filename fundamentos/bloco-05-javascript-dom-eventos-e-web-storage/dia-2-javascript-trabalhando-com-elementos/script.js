@@ -9,3 +9,4 @@ const primeiroFilho = pai.firstElementChild;
 console.log(ondeVoceEsta.previousElementSibling);
 console.log((ondeVoceEsta.nextSibling.textContent = "Texto mudou!"));
 console.log(ondeVoceEsta.nextElementSibling);
+console.log(pai.lastElementChild.lastElementChild);
