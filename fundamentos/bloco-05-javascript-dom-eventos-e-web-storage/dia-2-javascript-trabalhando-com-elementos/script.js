@@ -5,3 +5,5 @@ ondeVoceEsta.firstElementChild.innerText = "Primeiro Filho";
 
 const pai = document.getElementById("pai");
 const primeiroFilho = pai.firstElementChild;
+
+console.log(ondeVoceEsta.previousElementSibling);
