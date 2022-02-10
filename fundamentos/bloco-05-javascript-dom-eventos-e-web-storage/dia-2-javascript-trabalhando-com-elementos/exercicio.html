@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function createElement(element, className = "") {
+          const newElement = document.createElement(element);
+          if (className !== "") {
+            newElement.className = className;
+          }
+
+          return newElement;
+      }
+
+      function elementAppend(element, parent) {
+        const parentSelector = document.querySelector(parent);
+
+        return parentSelector.appendChild(element);
+      }
+
+      const element = createElement('h1', 'title');
+      element.innerText = "Exercício 5.2 - JavaScript DOM";
+      elementAppend(element, 'body');
+
+      const main = createElement('main', 'main-content');
+      elementAppend(main, 'body');
+
+      const section = createElement('section', 'center-content');
+      elementAppend(section, '.main-content');
+
+      const p = createElement('p');
+      elementAppend(p, '.center-content');
+
+      const contentLeft = createElement('section', 'left-content');
+      elementAppend(contentLeft, '.main-content');
+
+      const contentRight = createElement('section', 'right-content');
+      elementAppend(contentRight, '.main-content');
+
+      const smallImage = createElement('img', 'small-image');
+      smallImage.src = "https://picsum.photos/200";
+      elementAppend(smallImage, '.left-content');
+
+      const ul = createElement('ul');
+      elementAppend(ul, '.right-content');
+
+      for (let i = 0; i <= 10; i += 1) {
+          const li = createElement('li');
+          li.innerText = i;
+          elementAppend(li, 'ul');
+      }
+
+      for (let i = 1; i <= 3; i += 1) {
+          const h3 = createElement('h3', 'description');
+          elementAppend(h3, '.main-content');
+      }
+
+      main.removeChild(contentLeft);
+      contentRight.style.marginRight = 'auto';
+
+      contentRight.parentElement.style.backgroundColor = "green";
+      ul.lastElementChild.remove();
+      ul.lastElementChild.remove();
+    </script>
+  </body>
+</html>
