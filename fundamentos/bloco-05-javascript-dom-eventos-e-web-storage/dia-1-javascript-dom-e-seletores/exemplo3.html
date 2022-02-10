@@ -1,0 +1,19 @@
+<!-- Um outro ponto é a forma da resposta, que pode ser diferente entre os seletores ( HTMLCollection e NodeList ). A forma de buscar os dados armazenados nessas estruturas, em alguns casos, pode mudar, então tenha cuidado na hora de fazer funções que utilizem o resultado dos seletores, isso pode salvar das dores de cabeça sobre o porquê de uma função aparentemente correta não funcionar.
+Para praticar, substitua todas as funções que você usou no exercício anterior por querySelector e/ou querySelectorAll . -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="content" id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="content" id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const content = document.querySelectorAll(".content");
+      content[0].style.color = "blue";
+      const subtitle = document.querySelector("h4");
+      subtitle.style.color = "deeppink";
+    </script>
+  </body>
+</html>
