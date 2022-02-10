@@ -94,6 +94,15 @@
       const smallImage = createElement('img', 'small-image');
       smallImage.src = "https://picsum.photos/200";
       elementAppend(smallImage, '.left-content');
+
+      const ul = createElement('ul');
+      elementAppend(ul, '.right-content');
+
+      for (let i = 0; i <= 10; i += 1) {
+          const li = createElement('li');
+          li.innerText = i;
+          elementAppend(li, 'ul');
+      }
     </script>
   </body>
 </html>
