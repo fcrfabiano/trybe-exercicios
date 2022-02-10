@@ -27,3 +27,15 @@ console.log(
   irmaoPrimeiroFilhoDoFilho.previousElementSibling.previousElementSibling
     .previousElementSibling
 );
+
+const paiDoPai = document.getElementById("paiDoPai");
+const paiRemove = document.querySelectorAll("section");
+for (let i = 0; i < paiRemove.length; i += 1) {
+  if (
+    paiRemove[i].id !== "pai" &&
+    paiRemove[i].id !== "elementoOndeVoceEsta" &&
+    paiRemove[i].id !== "primeiroFilhoDoFilho"
+  ) {
+    paiRemove[i].remove();
+  }
+}
