@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para fixar</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <a href="www.betrybe.com" target="_blank" id="href">TRYBE</a>
+    <input type="text" id="input-text"/>
+    <input type="checkbox" id="input-checkbox" />
+    
+    <script>
+        const INPUT_TEXT = document.querySelector("#input-text");
+        const INPUT_CHECKBOX = document.querySelector("#input-checkbox");
+        const HREF_LINK = document.querySelector("#href");
+
+        HREF_LINK.addEventListener('click', (e) => {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
