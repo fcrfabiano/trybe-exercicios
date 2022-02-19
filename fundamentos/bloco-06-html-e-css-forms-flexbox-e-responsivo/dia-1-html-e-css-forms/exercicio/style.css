@@ -65,7 +65,7 @@ button[type=reset] {
     cursor: pointer;
     border-radius: 3px;
     position: relative;
-    margin-left: 10px;
+    margin-right: 5px;
 }
 
 .concordo:before {
@@ -97,14 +97,14 @@ button[type=reset] {
     position: relative;
 }
 
-.opcao, .radio {
+.opcao, .radio, .checkbox {
     cursor: pointer;
     margin-left: 5px;
 }
 
 #data {
     padding-left: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .radio {
@@ -128,10 +128,22 @@ button[type=reset] {
     left: 2px;
 }
 
+.opcao:hover, .radio:hover, .concordo:hover, .checkbox:hover {
+    filter: brightness(50%);
+}
+
 .opcao:focus {
     box-shadow: 0 0 5px rgb(102,102,102);
 }
 
 #text-name, #text-email {
     padding-left: 5px;
+}
+
+button:hover {
+    filter: brightness(95%);
+}
+
+button:active {
+    box-shadow: 0 0 5px rgb(102,102,102);
 }
