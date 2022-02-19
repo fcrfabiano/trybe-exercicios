@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>TrybeTrip</h1>
+    </header>
+    <main id="main">
+        <section>
+            <article id="article">
+                <label for="text-name">Nome:</label>
+                <input placeholder="Digite o seu nome" type="text" name="text-name" id="text-name" autofocus required>
+            </article>
+            <article>
+                <label for="text-email">Email:</label>
+                <input placeholder="Digite o seu email" type="email" name="text-email" id="text-email" required>
+            </article>
+            <article id="article">
+                <input class="opcao" type="radio" name="opcao" id="1">
+                <label class="radio" for="1" id="1">Opção 1</label>
+                <input class="opcao"  type="radio" name="opcao" id="2">
+                <label class="radio" for="2" id="2">Opção 2</label>
+                <input class="opcao"  type="radio" name="opcao" id="3">
+                <label class="radio" for="3" id="3">Opção 3</label>
+                <input class="opcao" type="radio" name="opcao" id="4">
+                <label class="radio" for="4" id="4">Opção 4</label>
+            </article>
+            <article>
+                <label for="textarea-resposta">Espaço para digitar a resposta:</label>
+                <textarea placeholder="Digite sua resposta" name="textarea-resposta" id="textarea-resposta" cols="48" rows="10"></textarea>
+            </article>
+            <article id="article">
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data">
+            </article>
+            <article id="article">
+                <label for="concordo1">Concordo 1</label>
+                <input class="concordo" type="checkbox" name="concordo1" id="concordo1">
+            </article>
+            <article id="article">
+                <label for="concordo2">Concordo 2</label>
+                <input class="concordo" type="checkbox" name="concordo2" id="concordo2">
+            </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <button type="submit">Enviar</button>
+        <button type="reset">Apagar</button>
+    </footer>
+</body>
+</html>
