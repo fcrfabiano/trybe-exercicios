@@ -41,7 +41,7 @@ myWebpage.addEventListener('mouseenter', () => {
     myWebpage.style.color = '#2fc18c';
 });
 myWebpage.addEventListener('mouseout', () => {
-    myWebpage.style.color = '#fff';
+    myWebpage.style.color = 'unset';
 });
 // Segue abaixo um exemplo do uso de event.target:
 
@@ -62,3 +62,14 @@ firstLi.addEventListener('click', () => {
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
+
+// function handleChangeTech(event) {
+//     const techElement = document.querySelector('.tech');
+//     techElement.classList.remove('tech');
+//     event.target.classList.add('tech');
+//     input.value = '';
+//   }
+  
+//   firstLi.addEventListener('click', handleChangeTech);
+//   secondLi.addEventListener('click', handleChangeTech);
+//   thirdLi.addEventListener('click', handleChangeTech);
