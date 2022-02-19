@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>TrybeTrip</h1>
+    </header>
+    <form action="viagem.php" method="post" name="trybetrip">
+        <main id="main">
+            <section>
+                <article id="article">
+                    <label for="text-name">Nome:</label>
+                    <input minlength="10" maxlength="40" placeholder="Digite o seu nome" type="text" name="textName" id="text-name" autofocus required>
+                </article>
+                <article>
+                    <label for="text-email">Email:</label>
+                    <input minlength="10" maxlength="50"  placeholder="Digite o seu email" type="email" name="textEmail" id="text-email" required>
+                </article>
+                <article id="article">
+                    <input class="opcao" value="cidade" type="radio" name="opcao" id="cidade" required>
+                    <label class="radio" for="cidade" id="cidade">Cidade</label>
+                    <input class="opcao" value="campo"  type="radio" name="opcao" id="campo">
+                    <label class="radio" for="campo" id="campo">Campo</label>
+                    <input class="opcao" value="praia"  type="radio" name="opcao" id="praia">
+                    <label class="radio" for="praia" id="praia">Praia</label>
+                    <input class="opcao" value="montanhas" type="radio" name="opcao" id="montanhas">
+                    <label class="radio" for="montanhas" id="montanhas">Montanhas</label>
+                </article>
+                <article>
+                    <label for="textarea-resposta">Espaço para digitar a resposta:</label>
+                    <textarea maxlength="500" placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?" name="textareaResposta" id="textarea-resposta" cols="48" rows="10" required></textarea>
+                </article>
+                <article id="article">
+                    <label for="data">Qual a melhor data para realizar sua viagem?</label>
+                    <input type="date" name="data" id="data" required>
+                </article>
+                <article id="article">
+                    <input class="concordo" type="checkbox" name="concordo1" id="concordo1" required>
+                    <label class="checkbox" for="concordo1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                </article>
+                <article id="article">
+                    <input class="concordo" type="checkbox" name="concordo2" id="concordo2" required>
+                    <label class="checkbox" for="concordo2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                </article>
+            </section>
+        </main>
+        <footer id="footer">
+            <button type="submit" id="submit">Enviar</button>
+            <button type="reset" id="reset">Apagar</button>
+        </footer>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

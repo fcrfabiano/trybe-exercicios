@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submeter Palestra</title>
+    <link rel="stylesheet" href="style-aula.css">
+</head>
+<body>
+    <header class="speaker-form-header">
+        <h1>Submeter Palestra</h1>
+        <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+    </header>
+    <main>
+        <form class="speaker-form" method="get" action="">
+            <div class="form-row">
+                <div class="line-content">
+                    <label for="full-name">Nome Completo</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+
+                <div class="line-content">
+                    <fieldset class="legacy-form-row">
+                        <legend>Tipo de palestrar</legend>
+                        <input type="radio" name="talk-type" id="talk-type-1">
+                        <label for="talk-type-1">Palco principal</label>
+                        <input type="radio" name="talk-type" id="talk-type-2">
+                        <label for="talk-type-2">Workshop</label>
+                    </fieldset>
+                </div>
+
+                <div class="line-content">
+                    <label for="t-shirt">Tamanho da camiseta</label>
+                    <select name="t-shirt" id="t-shirt">
+                        <option value="p">Pequena</option>
+                        <option value="m">Média</option>
+                        <option value="g">Grande</option>
+                       <option value="gg">Extra Grande</option>
+                    </select>
+                </div>
+
+                <div class="line-content">
+                    <label for="abstract">Resumo da sua palestra</label>
+                    <textarea name="abstract" id="abstract" cols="30" rows="2" placeholder="Descreva sua palestra" class="abstract-textArea"></textarea>
+                </div>
+
+                <div class="line-content">
+                    <input type="checkbox" name="available" id="available">
+                    <label for="available">Eu estou disponível no dia da palestra</label>
+                </div>
+
+                <div class="line-content">
+                    <button class="button" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

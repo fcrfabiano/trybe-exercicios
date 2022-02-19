@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(102,102,102);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#textarea-resposta {
+    display: block;
+    resize: none;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#header {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+#main {
+    border: 5px solid rgb(0, 0, 0);
+    width: 900px;
+    margin: 10px;
+    padding: 30px;
+}
+
+article {    
+    margin-top: 20px;
+}
+
+#article {
+    display: flex;
+    align-items: center;
+}
+
+#footer {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+button {
+    background: rgb(255,255,255);
+    border: 2px solid rgb(102,102,102);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+button[type=reset] {
+    margin-left: 10px;
+}
+
+.concordo {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(102,102,102);
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.concordo:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.concordo:checked:before {
+    content: '✓';
+    position: absolute;
+    opacity: 1;
+    font-size: 30px;
+    top: -9px;
+    left: -5px;
+}
+
+.concordo:focus {
+    box-shadow: 0 0 5px rgb(102,102,102);
+}
+
+.opcao {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(102,102,102);
+    border-radius: 50%;
+    position: relative;
+}
+
+.opcao, .radio, .checkbox {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#data {
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+.radio {
+    margin: 5px;
+}
+
+.opcao:before {
+    content: '';
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.opcao:checked:before {
+    opacity: 1;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(102,102,102);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+.opcao:hover, .radio:hover, .concordo:hover, .checkbox:hover {
+    filter: brightness(50%);
+}
+
+.opcao:focus {
+    box-shadow: 0 0 5px rgb(102,102,102);
+}
+
+#text-name, #text-email {
+    padding-left: 5px;
+}
+
+button:hover {
+    filter: brightness(95%);
+}
+
+button:active {
+    box-shadow: 0 0 5px rgb(102,102,102);
+}
