@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(63,173,64);
+    font-family: sans-serif;
+}
+
+#container {
+    background-color: white;
+    border-radius: 1rem;
+    width: 1000px;
+    margin: 100px 0 0 100px;
+    padding: 30px;
+}
+
+#funcionamento {
+    font-weight: 300;
+    color: rgb(134,134,134);
+}
+
+#lista-tarefas {
+    margin: 20px 0 0 20px;
+}
+
+#active {
+    background-color: gray;
+}
+
+.completed {
+    text-decoration: line-through solid black;
+}
+
+#criar-tarefa, #remover-finalizados {
+    background-color: #0087CF;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#criar-tarefa:hover, #remover-finalizados:hover, #apaga-tudo:hover, #salvar-tarefas:hover, #mover-cima:hover, #mover-baixo:hover {
+    filter: brightness(110%);
+    transition: filter 0.2s;
+}
+
+#criar-tarefa:active, #remover-finalizados:active, #apaga-tudo:active, #salvar-tarefas:active, #mover-cima:active, #mover-baixo:active {
+    filter: brightness(120%);
+    transition: filter 0.2s;
+}
+
+#apaga-tudo {
+    background-color: #90191B;
+}
+
+#salvar-tarefas {
+    background-color: #3FAD40;
+    
+}
+
+.botoes {
+    color: white;
+    font-weight: bold;
+    padding: 7px 20px 7px 20px;
+    border-radius: 25px;
+    border: 0;
+    height: 32px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#mover-cima, #mover-baixo {
+    background-color: #FC7F00;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%);
+}
+
+#remover-selecionado {
+    background-color: #90191B;
+    vertical-align: center;
+}

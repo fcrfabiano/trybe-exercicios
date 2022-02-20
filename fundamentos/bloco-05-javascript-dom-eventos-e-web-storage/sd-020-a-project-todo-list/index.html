@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="container">
+        <header>
+            <h1>Minha Lista de Tarefas</h1>
+            <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+            <form>
+                <input type="text" name="texto-tarefa" id="texto-tarefa">
+                <button  class="botoes" type="submit" id="criar-tarefa">Adicionar</button>
+            </form>
+        </header>
+        <main>
+            <ol id="lista-tarefas">
+
+            </ol>
+            <button class="botoes" id="remover-selecionado"><img src="https://cdn-icons-png.flaticon.com/512/566/566013.png"></button>
+            <button class="botoes" id="mover-cima"><img src="https://cdn-icons-png.flaticon.com/512/566/566008.png"></button>
+            <button class="botoes" id="mover-baixo"><img src="https://cdn-icons-png.flaticon.com/512/566/566003.png"></button>
+            <button class="botoes" id="remover-finalizados">Limpar Completos</button>
+            <button class="botoes" id="apaga-tudo">Limpar Lista</button>
+            <button class="botoes" id="salvar-tarefas">Salvar Tarefas</button>
+        </main>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
