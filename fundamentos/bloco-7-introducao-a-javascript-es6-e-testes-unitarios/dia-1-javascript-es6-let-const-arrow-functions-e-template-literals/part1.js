@@ -4,7 +4,7 @@
 // Modifique as concatenações para template literals .
 // Copie o código abaixo
 
-function testingScope(escopo) {
+const testingScope = (escopo) => {
     if (escopo === true) {
       let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
       ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
