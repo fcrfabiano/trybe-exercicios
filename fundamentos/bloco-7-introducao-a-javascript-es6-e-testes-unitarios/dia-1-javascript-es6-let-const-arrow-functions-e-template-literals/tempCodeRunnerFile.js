@@ -1,6 +1,11 @@
+const fatorial = n => {
+    let resultado = 1;
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+    for (let i = 1; i <= n; i += 1) {
+        resultado = resultado * i;
+    }
 
-const sortNumber = () => oddsAndEvens.sort((a, b) => a - b);
+    return (n < 0) ? 'O número precisa ser maior que 0' : resultado;
+}
 
-console.log(`Os números ${sortNumber()} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+console.log(fatorial(5));
