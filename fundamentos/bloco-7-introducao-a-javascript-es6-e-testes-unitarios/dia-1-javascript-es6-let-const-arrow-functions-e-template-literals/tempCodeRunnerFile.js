@@ -1,11 +1,4 @@
-const fatorial = n => {
-    let resultado = 1;
 
-    for (let i = 1; i <= n; i += 1) {
-        resultado = resultado * i;
-    }
+const longestWord = (word) => console.log(word.split(' ').sort((a, b) => a.length - b.length).pop());
 
-    return (n < 0) ? 'O número precisa ser maior que 0' : resultado;
-}
-
-console.log(fatorial(5));
+longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'); // retorna 'aconteceu'

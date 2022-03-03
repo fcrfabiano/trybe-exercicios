@@ -12,9 +12,11 @@ const fatorial = n => {
         resultado = resultado * i;
     }
 
-    return (n < 0) ? 'O número precisa ser maior que 0' : resultado;
+    return (n < 0) ? 'O número precisa ser maior que 0' : `${n}! = ${resultado}`;
 }
 
 console.log(fatorial(5));
 
-longestWord('Antônio foi no banheiro e não sabemos o que aconteceu') // retorna 'aconteceu'
+const longestWord = (word) => console.log(word.split(' ').sort((a, b) => a.length - b.length).pop());
+
+longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'); // retorna 'aconteceu'
