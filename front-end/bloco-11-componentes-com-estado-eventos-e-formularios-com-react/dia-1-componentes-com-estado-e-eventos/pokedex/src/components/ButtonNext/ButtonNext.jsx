@@ -5,8 +5,9 @@ import './styles.css';
 
 class ButtonNext extends Component {
   render () {
+    const { handlePage } = this.props;
     return (
-      <button className="button-next">Pŕoximo Pokemon</button>
+      <button onClick={() => handlePage()} className="button-next">Pŕoximo Pokemon</button>
     );
   }
 }

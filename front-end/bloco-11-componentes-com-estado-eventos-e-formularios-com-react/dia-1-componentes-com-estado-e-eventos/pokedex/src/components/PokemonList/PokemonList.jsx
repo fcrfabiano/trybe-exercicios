@@ -7,17 +7,15 @@ import './styles.css';
 
 class PokemonList extends Component {
   render () {
-    const { pokemonList } = this.props;
+    const { pokemonList, index } = this.props;
+
     return (
       <div className="pokemon-container">
         {
           pokemonList.map((pokemon) => (
             <PokemonCard
               key={pokemon.id}
-              name={pokemon.name}
-              type={pokemon.type}
-              weight={`${pokemon.averageWeight.value} ${pokemon.averageWeight.measurementUnit}`}
-              image={pokemon.image}
+              pokemon={pokemon}
             />
           ))
         }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import PokemonList from './components/PokemonList/PokemonList';
+import PokemonCard from './components/PokemonCard/PokemonCard';
 import Header from './components/Header/Header';
 import ButtonNext from './components/ButtonNext/ButtonNext';
 import Button from './components/Button/Button';
@@ -15,11 +16,28 @@ class App extends Component{
     super ();
 
     this.state = {
-      filter: '',
-      pokemonList: pokemons
+      index: 0,
+      pokemonList: pokemons,
+      pokemonsPerPage: 1,
+      currentPage: 0,
     };
 
     this.handleFilter = this.handleFilter.bind(this);
+    this.handlePage = this.handlePage.bind(this);
+  }
+
+  handlePage() {
+    const pages = Math.ceil(this.state.pokemonList.length / this.state.pokemonsPerPage);
+
+    if (this.state.currentPage < pages - 1) {
+      this.setState((prevState) => ({
+        currentPage: prevState.currentPage + 1,
+      }));
+    } else {
+      this.setState((prevState) => ({
+        currentPage: 0,
+      }));
+    }
   }
 
   handleFilter(param) {
@@ -36,7 +54,8 @@ class App extends Component{
     return (
       <main>
         <Header title="Pokedéx" />
-        <PokemonList pokemonList={this.state.pokemonList} />
+        {/* <PokemonList pokemonList={this.state.pokemonList} /> */}
+        <PokemonCard pokemon={this.state.pokemonList[this.state.currentPage] || this.state.pokemonList[0]} />
         <nav>
           <Button handleFilter={() => this.handleFilter('')} name="All" />
           <Button handleFilter={() => this.handleFilter('Electric')} name="Electric" />
@@ -47,7 +66,7 @@ class App extends Component{
           <Button handleFilter={() => this.handleFilter('Normal')} name="Normal" />
           <Button handleFilter={() => this.handleFilter('Dragon')} name="Dragon" />
         </nav>
-        <ButtonNext />
+        <ButtonNext handlePage={() => this.handlePage()} />
       </main>
     );
   }

@@ -5,30 +5,30 @@ import './styles.css';
 
 class PokemonCard extends Component {
   render () {
-    const {
-      name,
-      type,
-      weight,
-      image
-    } = this.props;
+    const { pokemon } = this.props;
     return (
       <div className="pokemon-card">
         <div className="pokemon-info">
-          <p>{name}</p>
-          <p>{type}</p>
-          <p>Avarage weight: {weight}</p>
+          <p>{pokemon.name}</p>
+          <p>{pokemon.type}</p>
+          <p>Avarage weight: {`${pokemon.averageWeight.value} ${pokemon.averageWeight.measurementUnit}`}</p>
         </div>
-        <img src={image} alt={name} />
+        <img src={pokemon.image} alt={pokemon.name} />
       </div>
     );
   }
 }
 
-PokemonCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  weight: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
-};
+// PokemonCard.propTypes = {
+//   pokemon: PropTypes.shape({
+//     name: PropTypes.string.isRequired,
+//     type: PropTypes.string.isRequired,
+//     image: PropTypes.string.isRequired,
+//     averageWeight: PropTypes.shape({
+//       value: PropTypes.string.isRequired,
+//       measurementUnit: PropTypes.string.isRequired
+//     }).isRequired,
+//   }).isRequired
+// };
 
 export default PokemonCard;

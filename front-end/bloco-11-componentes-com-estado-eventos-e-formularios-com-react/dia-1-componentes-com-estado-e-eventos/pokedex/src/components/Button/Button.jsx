@@ -5,9 +5,9 @@ import './styles.css';
 
 class Button extends Component {
   render () {
-    const { name } = this.props;
+    const { name, handleFilter } = this.props;
     return (
-      <button onClick={this.props.handleFilter} className="button">{ name }</button>
+      <button onClick={handleFilter} className="button">{ name }</button>
     );
   }
 }
