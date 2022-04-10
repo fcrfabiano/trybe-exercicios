@@ -1,0 +1,9 @@
+.button-next {
+  outline: none;
+  background: #047402;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 4rem;
+  padding: 0 2rem;
+  font-size: 1rem;
+}

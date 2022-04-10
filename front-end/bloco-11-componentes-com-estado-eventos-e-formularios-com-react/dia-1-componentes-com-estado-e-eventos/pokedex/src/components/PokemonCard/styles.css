@@ -1,0 +1,15 @@
+.pokemon-card {
+  border: 1px solid gray;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5rem;
+  min-width: 284.5px;
+  flex: 1 1 auto;
+  padding: 0.5rem 0;
+}
+
+.pokemon-info {
+  text-align: center;
+}
