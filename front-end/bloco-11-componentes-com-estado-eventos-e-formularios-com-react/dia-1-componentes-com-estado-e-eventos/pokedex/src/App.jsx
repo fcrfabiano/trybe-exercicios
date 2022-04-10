@@ -27,17 +27,20 @@ class App extends Component{
   }
 
   handlePage() {
-    const pages = Math.ceil(this.state.pokemonList.length / this.state.pokemonsPerPage);
+    // const pages = Math.ceil(this.state.pokemonList.length / this.state.pokemonsPerPage);
 
-    if (this.state.currentPage < pages - 1) {
-      this.setState((prevState) => ({
-        currentPage: prevState.currentPage + 1,
-      }));
-    } else {
-      this.setState((prevState) => ({
-        currentPage: 0,
-      }));
-    }
+    // if (this.state.currentPage < pages - 1) {
+    //   this.setState((prevState) => ({
+    //     currentPage: prevState.currentPage + 1,
+    //   }));
+    // } else {
+    //   this.setState((prevState) => ({
+    //     currentPage: 0,
+    //   }));
+    // }
+    this.setState((prevState) => ({
+      currentPage: (prevState.currentPage + 1) % prevState.pokemonList.length
+    }));
   }
 
   handleFilter(param) {
